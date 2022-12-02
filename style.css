@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
   }
+
   nav {
     background: #3c3a39;
     font-weight: 700;
@@ -55,6 +56,7 @@
   .social {
     margin-top: 12px;
   }
+
   .proffession {
     font-family: "Roboto", sans-serif;
     color: #fff5e1;
@@ -62,11 +64,12 @@
     font-size: 24px;
     line-height: 32px;
   }
+
   .skill {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #ffffff;
+    color: #fff;
   }
 
   .social ul {
