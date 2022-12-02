@@ -1,0 +1,32 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+    nav{
+        background: #3C3A39;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        color:#fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 24px;
+    
+        
+    
+    }
+
+    nav img{
+        width: 18px;
+        height: 12px;
+    }
+    
+  }
+
+
+
