@@ -1,32 +1,61 @@
-
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-
-@media only screen and (max-width: 600px) {
-    nav{
-        background: #3C3A39;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 24px;
-        color:#fff;
-        display: flex;
-        justify-content: space-between;
-        padding: 12px 24px;
-    
-        
-    
-    }
-
-    nav img{
-        width: 18px;
-        height: 12px;
-    }
-    
+@media only screen and (max-width: 375px) {
+  .container {
+    background: #1c1a19;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  nav {
+    background: #3c3a39;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 24px;
   }
 
+  nav img {
+    width: 18px;
+    height: 12px;
+  }
 
+  main{
+    padding: 0 24px;
+  }
 
+  section.name {
+    margin-top: 120px;
+    max-width: 327px;
+    font-family: 'Crete Round', serif;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.37px;
+    color: #ff6b00;
+    
+  }
+  .proffession {
+    color: #fff5e1;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .skill {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    
+  }
+}
