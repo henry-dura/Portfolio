@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -12,7 +14,6 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 12px;
   }
   nav {
     background: #3c3a39;
@@ -30,32 +31,49 @@
     height: 12px;
   }
 
-  main{
+  main {
     padding: 0 24px;
+    background-image: url("images/Group.png");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 68vh;
   }
 
   section.name {
     margin-top: 120px;
     max-width: 327px;
-    font-family: 'Crete Round', serif;
+    font-family: "Crete Round", serif;
     font-weight: 400;
     font-size: 56px;
     line-height: 64px;
     letter-spacing: 0.37px;
     color: #ff6b00;
-    
+  }
+
+  .profession,
+  .skill,
+  .social {
+    margin-top: 12px;
   }
   .proffession {
+    font-family: "Roboto", sans-serif;
     color: #fff5e1;
     font-weight: 700;
     font-size: 24px;
     line-height: 32px;
   }
   .skill {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #ffffff;
-    
+  }
+
+  .social ul {
+    list-style: none;
+    padding-left: 12px;
+    display: flex;
+    gap: 14px;
+    margin-bottom: 80px;
   }
 }
