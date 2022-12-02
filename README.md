@@ -1,39 +1,40 @@
-## Project Name
+## Portfolio Setup and First Mobile
+### Mobile first portfolio
 
-Portfolio: Mobile Version
+Built With
+html
+css
+visual studio.NET
+github
+Getting Started
+To get a local copy up and running follow these simple example steps.
 
+# Prerequisites
+VS code linters browser figma
 
-## Built With
+Setup
+copy the url to your local https://github.com/henry-dura/portfolio-mobile-first
 
-- figma template
-- Linters
-- HTML & CSS
+## 👤 Author
 
-## Getting Started
+### Henry Ikemefuna Ugwu
+### GitHub: https://github.com/henry-dura
+### Twitter: https://twitter.com/henryikemefuna
+### LinkedIn: https://www.linkedin.com/in/henry-ikemefuna-ugwu-3a2613100/
 
-The goal of this project is to:
-- Understand how to parse a Figma design to create a UI.
-- Flexbox to place elements in the page.
-- Build a personal portfolio site.
-- Use images and backgrounds to enhance the look of the website.
-- Use CSS Grid to place elements in the page.
-
-👤 Henry Ikemefuna Ugwu
-
-- GitHub: https://github.com/henry-dura
-- Twitter: https://twitter.com/henryikemefuna
-- LinkedIn: https://www.linkedin.com/in/henry-ikemefuna-ugwu-3a2613100/
 
 ## 🤝 Contributing
-
 Contributions, issues, and feature requests are welcome!
 
+Feel free to check the issues page.
 
-
-## Show your support
-
+Show your support
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+Acknowledgments
+Microverse Reviewers 
 
-- Microverse
+## 📝 License
+This project is MIT licensed.
+
+NOTE: we recommend using the MIT license - you can set it up quickly by using templates available on GitHub. You can also use any other license if you wish.
