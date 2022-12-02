@@ -27,7 +27,7 @@ After you're finished please remove all the comments and instructions!
   <img src="images/murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Portfolio Mobile First</b></h3>
 
 </div>
 
@@ -134,7 +134,7 @@ Example command:
 
 ### Setup
 
-Clone this repository to your desired folder:https://github.com/posh101/mobile-first-portfolio
+Clone this repository to your desired folder:https://github.com/henry-dura/portfolio-mobile-first
 
 <!--
 Example commands:
@@ -204,9 +204,9 @@ Example:
 
 👤 **Henry Ikemefuna Ugwu**
 
-- GitHub: [@githubhandle](https://github.com/henry-dura)
-- Twitter: [@twitterhandle](https://twitter.com/henryikemefuna)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/henry-ikemefuna-ugwu-3a2613100/)
+- GitHub: https://github.com/henry-dura
+- Twitter: https://twitter.com/henryikemefuna
+- LinkedIn: https://www.linkedin.com/in/henry-ikemefuna-ugwu-3a2613100/
 
 👤 **Author2**
 
