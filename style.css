@@ -16,7 +16,7 @@
     flex-direction: column;
   }
 
-  nav {
+  header {
     background: #3c3a39;
     font-weight: 700;
     font-size: 18px;
@@ -40,7 +40,7 @@
     background-position-y: 68vh;
   }
 
-  section.name {
+  h1 {
     margin-top: 120px;
     max-width: 327px;
     font-family: "Crete Round", serif;
