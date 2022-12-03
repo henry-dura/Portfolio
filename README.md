@@ -61,7 +61,7 @@ After you're finished please remove all the comments and instructions!
 
 > Describe your project in 1 or 2 sentences.
 
-**Portfolio Mobile First** is a project created to learn using figma and flexbox.
+**Portfolio Mobile First** is a project created to learn using figma,flexbox, and grid layout.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -122,7 +122,7 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need: understanding of getting design from figma and flexbox.
+In order to run this project you need: understanding of getting design from figma, flexbox and grid layout.
 
 <!--
 Example command:
