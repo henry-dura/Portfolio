@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -9,7 +9,9 @@
 }
 
 @media only screen and (max-width: 375px) {
-  .container,.about,.Programming-skills{
+  .container,
+  .about,
+  .Programming-skills {
     background: #1c1a19;
     min-height: 100vh;
     display: flex;
@@ -40,7 +42,8 @@
     background-position-y: 68vh;
   }
 
-  h1,h3 {
+  h1,
+  h3 {
     margin-top: 120px;
     max-width: 327px;
     font-family: "Crete Round", serif;
@@ -65,7 +68,8 @@
     line-height: 32px;
   }
 
-  .skill,.about p {
+  .skill,
+  .about p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -80,157 +84,158 @@
     margin-bottom: 80px;
   }
 
-  /* .grid-container{
-    display:grid;
+  .grid-container {
+    display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
+    padding-bottom: 120px;
     gap: 12px;
-  } */
-
-  .works h2{
-font-family: "Crete Round", serif;
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 52px;
-color: #1C1A19;
-
+    padding: 0 24px;
   }
 
- .recents{
-    border-bottom: 2px solid black;
-padding-bottom: 12px;
-
-
+  .item1 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 
-  .works p{
-    font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-
-
-color: #091E42;
-
-  }
-
-  .lang ul{
-    display:flex;
-    list-style: none;
-    gap:10px;
-  }
-
-  button{
-    padding: 5px 8px;
-  }
-  button.see-project{
-    background: #FF6B00;
-    color: #fff;
-    padding: 12px;
-    font-family: 'Inter', sans-serif;
-font-weight: 700;
-font-size: 17px;
-line-height: 24px;
-width: max-content;
-  }
-
-  .grid h2{
+  .works h2 {
     font-family: "Crete Round", serif;
     font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 44px;
-/* color: #fff; */
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #1c1a19;
   }
 
-  .grid{
-    background-image: url('images/background.png');
+  .recents {
+    border-bottom: 2px solid black;
+    padding: 120px 0 24px 0;
+    margin-bottom: 80px;
+  }
+
+  .works p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #091e42;
+  }
+
+  .lang ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    justify-content: space-evenly;
+  }
+
+  button {
+    padding: 12px;
+  }
+
+  button:hover {
+    border: 1px solid blue;
+  }
+  button.see-project {
+    background: #ff6b00;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    width: max-content;
+  }
+
+  .grid {
+    background-image: url("images/background.png");
     background-repeat: no-repeat;
-    background-position: center top;
-
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
-  button.see-project.btn{
+
+  .grid p,
+  .grid h2 {
+    color: #fff;
+    padding: 0 12px;
+  }
+
+  .grid h2 {
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 120px;
+    padding-right: 50px;
+
+    /* color: #fff; */
+  }
+  button.see-project.btn {
     width: 100%;
+    margin-top: -20px;
   }
 
-  .about{
-    
+  .about {
     gap: 24px;
     padding: 0 24px 50% 24px;
     background-image: url("images/about-bg.png");
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y: 68vh;
-    
+
     /* padding-bottom: 50%; */
   }
- 
 
-  .about p{
-    font-family:'Inter', sans-serif; 
+  .about p {
+    font-family: "Inter", sans-serif;
   }
 
-  .line{
+  .line {
     border-bottom: 1px solid white;
-
   }
 
-  .Programming-skills{
-    color:#fff;
+  .Programming-skills {
+    color: #fff;
     padding: 0 24px 30% 24px;
   }
 
-  .languages ul.first{
-    list-style-image: url('images/Rectangle 55.png');
+  .languages ul.first {
+    list-style-image: url("images/Rectangle 55.png");
     margin-left: 30%;
-    
-    
-    
-    
   }
 
-  .framework ul.second{
-    list-style-image: url('images/Rectangle 56.png');
+  .framework ul.second {
+    list-style-image: url("images/Rectangle 56.png");
     margin-left: 30%;
-    
   }
 
-  .skillset ul.third{
-    list-style-image: url('images/Rectangle 57.png');
+  .skillset ul.third {
+    list-style-image: url("images/Rectangle 57.png");
     margin-left: 35%;
-    
   }
-.skillset ul.third li{
-  text-align: left;
+  .skillset ul.third li {
+    text-align: left;
+  }
 
-}
-  
-
-
-  h4.first{
+  h4.first {
     margin-top: 120px;
   }
 
-  h4{
+  h4 {
     font-weight: 700;
-font-size: 32px;
-line-height: 44px;
+    font-size: 32px;
+    line-height: 44px;
   }
 
- ul.center{
-   
-
+  ul.center {
     text-align: center;
     list-style: none;
     font-weight: 400;
-font-size: 22px;
-line-height: 43px;
-font-family: 'Inter', sans-serif;
-
+    font-size: 22px;
+    line-height: 43px;
+    font-family: "Inter", sans-serif;
   }
-
- 
-
 }
