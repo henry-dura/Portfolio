@@ -132,10 +132,44 @@
 
   button {
     padding: 12px;
+    border: 0;
   }
 
-  button:hover {
-    border: 1px solid blue;
+  button:enabled {
+    background: #f55800;
+    color: #fff;
+  }
+
+  .lang ul button {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.24);
+  }
+
+  .lang button:hover,
+  .see-project button:hover {
+    background: #fff5e1;
+    border: 1px solid #f55800;
+    color: #f55800;
+  }
+
+  .lang button:active,
+  .see-project button:active {
+    background: #e05304;
+    color: #fff;
+  }
+
+  .lang button:disabled,
+  .see-project button:disabled {
+    background: #f4f1f0;
+    color: #000;
+  }
+
+  .lang.list button {
+    background-color: #fff;
+    color: #091e42;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    border: 1px solid gray;
   }
 
   button.see-project {
