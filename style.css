@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -88,9 +89,8 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    padding-bottom: 120px;
     gap: 12px;
-    padding: 0 24px;
+    padding: 0 24px 120px 24px;
   }
 
   .item1 {
@@ -120,7 +120,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-
     color: #091e42;
   }
 
@@ -138,6 +137,7 @@
   button:hover {
     border: 1px solid blue;
   }
+
   button.see-project {
     background: #ff6b00;
     color: #fff;
@@ -173,6 +173,7 @@
 
     /* color: #fff; */
   }
+
   button.see-project.btn {
     width: 100%;
     margin-top: -20px;
@@ -216,6 +217,7 @@
     list-style-image: url("images/Rectangle 57.png");
     margin-left: 35%;
   }
+
   .skillset ul.third li {
     text-align: left;
   }
