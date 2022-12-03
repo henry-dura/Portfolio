@@ -9,7 +9,7 @@
 }
 
 @media only screen and (max-width: 375px) {
-  .container,.about{
+  .container,.about,.Programming-skills{
     background: #1c1a19;
     min-height: 100vh;
     display: flex;
@@ -177,17 +177,57 @@ line-height: 44px;
 
   }
 
+  .Programming-skills{
+    color:#fff;
+    padding: 0 24px 30% 24px;
+  }
+
   .languages ul.first{
-    color: red;
-    list-style-type: circle;
     list-style-image: url('images/Rectangle 55.png');
-    margin-left: 36px;
+    margin-left: 30%;
+    
+    
+    
     
   }
 
-  .languages ul{
+  .framework ul.second{
+    list-style-image: url('images/Rectangle 56.png');
+    margin-left: 30%;
+    
+  }
+
+  .skillset ul.third{
+    list-style-image: url('images/Rectangle 57.png');
+    margin-left: 35%;
+    
+  }
+.skillset ul.third li{
+  text-align: left;
+
+}
+  
+
+
+  h4.first{
+    margin-top: 120px;
+  }
+
+  h4{
+    font-weight: 700;
+font-size: 32px;
+line-height: 44px;
+  }
+
+ ul.center{
+   
+
     text-align: center;
     list-style: none;
+    font-weight: 400;
+font-size: 22px;
+line-height: 43px;
+font-family: 'Inter', sans-serif;
 
   }
 
