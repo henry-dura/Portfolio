@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 * {
   box-sizing: border-box;
   padding: 0;
@@ -79,4 +79,79 @@
     gap: 14px;
     margin-bottom: 80px;
   }
+
+  /* .grid-container{
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  } */
+
+  .works h2{
+font-family: "Crete Round", serif;
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 52px;
+color: #1C1A19;
+
+  }
+
+ .recents{
+    border-bottom: 2px solid black;
+padding-bottom: 12px;
+
+
+  }
+
+  .works p{
+    font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+
+color: #091E42;
+
+  }
+
+  .lang ul{
+    display:flex;
+    list-style: none;
+    gap:10px;
+  }
+
+  button{
+    padding: 5px 8px;
+  }
+  button.see-project{
+    background: #FF6B00;
+    color: #fff;
+    padding: 12px;
+    font-family: 'Inter', sans-serif;
+font-weight: 700;
+font-size: 17px;
+line-height: 24px;
+  }
+
+  .grid h2{
+    font-family: "Crete Round", serif;
+    font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 44px;
+/* color: #fff; */
+  }
+
+  .grid{
+    background-image: url('images/background.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+
+  }
+  button.see-project.btn{
+    width: 100%;
+  }
+
 }
