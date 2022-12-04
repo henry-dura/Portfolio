@@ -126,8 +126,9 @@
   .lang ul {
     display: flex;
     list-style: none;
-    gap: 10px;
-    justify-content: space-evenly;
+    padding-left: 12px;
+    gap: 20px;
+    justify-content: flex-start;
   }
 
   button {
@@ -142,7 +143,11 @@
 
   .lang ul button {
     color: #fff;
+    font-family: "Inter", sans-serif;
     background: rgba(255, 255, 255, 0.24);
+    padding: 10px 12px;
+    font-weight: 500;
+    font-size: 15px;
   }
 
   .lang button:hover,
@@ -185,6 +190,7 @@
   .grid {
     background-image: url("images/background.png");
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -210,7 +216,8 @@
 
   button.see-project.btn {
     width: 100%;
-    margin-top: -20px;
+
+    /* margin-top: 10px; */
   }
 
   .about {
@@ -219,17 +226,12 @@
     background-image: url("images/about-bg.png");
     background-repeat: no-repeat;
     background-position-x: 100%;
-    background-position-y: 68vh;
-
-    /* padding-bottom: 50%; */
+    background-position-y: 60vh;
+    border-bottom: 1px solid #fff;
   }
 
   .about p {
     font-family: "Inter", sans-serif;
-  }
-
-  .line {
-    border-bottom: 1px solid white;
   }
 
   .Programming-skills {
@@ -237,23 +239,34 @@
     padding: 0 24px 30% 24px;
   }
 
-  .languages ul.first {
+  .Programming-skills li#languages {
     list-style-image: url("images/Rectangle 55.png");
-    margin-left: 30%;
+
+    /* margin-left: 35%; */
   }
 
-  .framework ul.second {
+  .Programming-skills li#frameworks {
     list-style-image: url("images/Rectangle 56.png");
-    margin-left: 30%;
+
+    /* margin-left: 30%; */
   }
 
-  .skillset ul.third {
+  .Programming-skills li#skillset {
     list-style-image: url("images/Rectangle 57.png");
-    margin-left: 35%;
   }
 
-  .skillset ul.third li {
-    text-align: left;
+  .Programming-skills ul {
+    display: table;
+    margin: 0 auto;
+  }
+
+  .Programming-skills ul ul {
+    list-style: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 43px;
+    font-family: "Inter", sans-serif;
   }
 
   h4.first {
@@ -261,17 +274,9 @@
   }
 
   h4 {
+    margin-bottom: 25px;
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
-  }
-
-  ul.center {
-    text-align: center;
-    list-style: none;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 43px;
-    font-family: "Inter", sans-serif;
   }
 }
