@@ -246,16 +246,23 @@ button.see-project.btn {
 
 .about {
   gap: 24px;
-  padding: 0 24px 50% 24px;
+  padding-bottom: 50% ;
   background-image: url("images/about-bg.png");
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 60vh;
-  border-bottom: 1px solid #fff;
+  /* border-bottom: 1px solid #fff; */
 }
 
 .about p {
   font-family: "Inter", sans-serif;
+}
+
+.bottom-dark{
+  background: #1c1a19;
+  padding: 0 24px;
+ 
+
 }
 
 .Programming-skills {
@@ -308,12 +315,14 @@ h4 {
     flex-direction: column;
     gap: 24px;
     align-items: center;
+    
     margin-bottom: 149px;
+    padding: 0 24px;
   }
 
   input,
   textarea {
-    width: 80%;
+    width: 90%;
     margin-top: 12px;
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -333,6 +342,7 @@ h4 {
     align-items: center;
     width: 100%;
   }
+  
 
   h3.bottom-text {
     font-family: "Inter", sans-serif;
@@ -355,7 +365,7 @@ h4 {
   }
 
   hr {
-    width: 80%;
+    width: 85%;
   }
 
   hr.foot {
@@ -375,6 +385,7 @@ h4 {
     }
     .desktop {
       display: flex;
+      gap: 2px;
     }
   
     .desktop ul {
@@ -406,7 +417,7 @@ h4 {
     .intro {
       order: 999;
     }
-    .social ul {
+    .first-desktop .social ul {
       order: 1;
       display: flex;
       flex-direction: column;
@@ -444,7 +455,7 @@ h4 {
   .grid-container{
     grid-template-rows: repeat(5,auto);
     grid-template-columns:  repeat(3,1fr);
-    row-gap: 30px;
+    gap: 30px;
   }
 
   .grid-container .second-desktop{
@@ -512,6 +523,63 @@ h4 {
   .grid.item13{
     grid-column: 3;
   }
+
+  .about{
+    width: 40%;
+    background-image: none;
+    padding-bottom: 0px;
+    
+    
+  }
+
+  .bottom-dark{
+    background-image: url("images/About-Desktop-bg.png");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 10vh;
+  padding: 0 141px;
+
+  }
+
+
+
+  .contact{
+    margin-top: 120px;
+    flex-direction: row;
+    padding: 0 141px;
+    gap: 60px;
+  }
+
+  .contact form{
+    align-items: flex-start;
+  }
+
+  .bottom-text{
+    margin-top: 0;
+  }
+
+  .desktop.contact-names{
+    width: 85%;
+  }
+  
+
+  .desktop .first-name,.desktop .last-name{
+    flex-grow: 1;
+  }
+
+  
+.footer.social-media ul{
+  list-style: none;
+  padding-left: 12px;
+  display: flex;
+  gap: 14px;
+  /* margin-bottom: 80px; */
+}
+
+
+  
+
+
     
     
   }
