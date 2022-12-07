@@ -27,7 +27,7 @@ After you're finished please remove all the comments and instructions!
   <img src="images/murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Portfolio Mobile First</b></h3>
+  <h3><b>Responsive Portfolio</b></h3>
 
 </div>
 
@@ -57,11 +57,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Portfolio Mobile First <a name="about-project"></a>
+# 📖 Responsive Portfolio <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
-**Portfolio Mobile First** is a project created to learn using figma,flexbox, and grid layout.
+**Responsive Portfolio** is a responsive webpage design of a portfolio created to learn using figma,flexbox, and grid layout.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -122,7 +122,7 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need: understanding of getting design from figma, flexbox and grid layout.
+In order to run this project you need: understanding of getting design from figma, flexbox, grid layout, and Media Query.
 
 <!--
 Example command:
