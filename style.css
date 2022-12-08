@@ -13,18 +13,12 @@
 .about,
 .Programming-skills {
   background: #1c1a19;
-
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
 }
 
 .nav {
   background: #3c3a39;
-
-  /* font-weight: 700;
-  font-size: 18px;
-  line-height: 24px; */
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -237,7 +231,7 @@ button.see-project {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
 }
 
 .grid p,
@@ -422,8 +416,6 @@ hr.foot {
   .first-desktop {
     display: flex;
     align-items: center;
-
-    /* width: 45%; */
     gap: 87.01px;
     margin-left: 40px;
   }
@@ -441,6 +433,10 @@ hr.foot {
     font-size: 20px;
     font-family: "Inter", sans-serif;
     line-height: 32px;
+  }
+
+  .lang ul button {
+    margin-top: 24px;
   }
 
   .Programming-skills ul {
@@ -551,10 +547,6 @@ hr.foot {
   .grid.item7:hover .lang {
     display: none;
   }
-
-  /* .grid.item7 {
-    background-image: url("images/Img Placeholder (1).png");
-  } */
 
   .grid.item9,
   .grid.item12 {
