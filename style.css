@@ -13,16 +13,18 @@
 .about,
 .Programming-skills {
   background: #1c1a19;
-  min-height: 100vh;
+
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
 }
 
 .nav {
   background: #3c3a39;
-  font-weight: 700;
+
+  /* font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 24px; */
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -238,6 +240,10 @@ button.see-project {
   gap: 20px;
 }
 
+.grid:hover {
+  opacity: 80%;
+}
+
 .grid p,
 .grid h2 {
   color: #fff;
@@ -269,6 +275,9 @@ button.see-project.btn {
 
 .about p {
   font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .bottom-dark {
@@ -377,11 +386,28 @@ hr.foot {
     gap: 2px;
   }
 
+  .nav {
+    padding: 26px 154px;
+  }
+
+  .nav p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   .desktop ul {
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 33px;
     align-items: baseline;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .desktop ul a {
@@ -400,12 +426,25 @@ hr.foot {
   .first-desktop {
     display: flex;
     align-items: center;
-    width: 45%;
-    gap: 70px;
+
+    /* width: 45%; */
+    gap: 87.01px;
+    margin-left: 40px;
   }
 
   .intro {
     order: 999;
+  }
+
+  .proffession {
+    color: #fff;
+  }
+
+  .skill {
+    padding-right: 731px;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    line-height: 32px;
   }
 
   .Programming-skills ul {
@@ -427,6 +466,7 @@ hr.foot {
     justify-content: start;
     align-items: center;
     margin-top: 200px;
+    gap: 4px;
   }
 
   .second-desktop {
@@ -519,9 +559,14 @@ hr.foot {
   }
 
   .about {
-    width: 40%;
+    margin-right: 630px;
     background-image: none;
-    padding-bottom: 0;
+    padding-bottom: 142px;
+  }
+
+  .about p {
+    font-size: 20px;
+    line-height: 32px;
   }
 
   .bottom-dark {
@@ -533,7 +578,7 @@ hr.foot {
   }
 
   .Programming-skills {
-    padding: 0;
+    padding-bottom: 142px;
   }
 
   h4.second,
@@ -544,16 +589,20 @@ hr.foot {
   .contact {
     margin-top: 120px;
     flex-direction: row;
-    padding: 0 141px;
-    gap: 60px;
+    padding: 0 142px 0 135px;
+    gap: 36px;
   }
 
   .contact form {
     align-items: flex-start;
   }
 
-  .bottom-text {
+  h3.bottom-text {
     margin-top: 0;
+    font-size: 40px;
+    line-height: 52px;
+    max-width: 33%;
+    text-align: left;
   }
 
   .desktop.contact-names {
