@@ -483,6 +483,7 @@ hr.foot {
 
   .grid.desktop {
     display: grid;
+    position: relative;
   }
 
   .grid-container {
@@ -517,15 +518,11 @@ hr.foot {
     grid-column: 1;
   }
 
-  .grid.item7.desktop {
-    position: relative;
-  }
-
-  .grid.desktop .first {
+  .grid.desktop .see-project {
     display: none;
   }
 
-  .grid.item7:hover .first {
+  .grid:hover .see-project {
     display: inline-block;
     width: 100%;
     height: 50px;
@@ -533,7 +530,7 @@ hr.foot {
     bottom: 0;
   }
 
-  .grid.item7:hover {
+  .grid:hover {
     background-image: url("images/Img Placeholder (1).png");
   }
 
@@ -542,28 +539,28 @@ hr.foot {
     line-height: 32px;
   }
 
-  .grid.item7:hover p,
-  .grid.item7:hover h2,
-  .grid.item7:hover .lang {
+  .grid:hover p,
+  .grid:hover h2,
+  .grid:hover .lang {
     display: none;
   }
 
-  .grid.item9,
-  .grid.item12 {
+  .item9,
+  .item12 {
     background-image: url("images/Img Placeholder (2).png");
     grid-column: 2;
   }
 
-  .grid.item10,
-  .grid.item13 {
+  .item10,
+  .item13 {
     background-image: url("images/Img Placeholder (3).png");
     background-position: center;
     grid-column: 3;
   }
 
-  .grid.item11,
-  .grid.item12,
-  .grid.item13 {
+  .item11,
+  .item12,
+  .item13 {
     grid-row: 4;
   }
 
