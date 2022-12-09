@@ -390,10 +390,10 @@ hr.foot {
   }
 
   @keyframes slidein {
-    from{
+    from {
       margin-left: -100%;
     }
-    to{
+    to {
       margin-left: 0%;
     }
   }
@@ -630,5 +630,10 @@ hr.foot {
     padding-left: 12px;
     display: flex;
     gap: 14px;
+  }
+
+  .work-img:hover {
+    transform: scale(1.2);
+    transition: transform 2s;
   }
 }
