@@ -386,6 +386,16 @@ hr.foot {
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
+    animation: 2s 1 slidein;
+  }
+
+  @keyframes slidein {
+    from{
+      margin-left: -100%;
+    }
+    to{
+      margin-left: 0%;
+    }
   }
 
   .desktop ul {
