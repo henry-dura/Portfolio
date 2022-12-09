@@ -386,6 +386,17 @@ hr.foot {
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
+    animation: 2s 1 slidein;
+  }
+
+  @keyframes slidein {
+    from {
+      margin-left: -100%;
+    }
+
+    to {
+      margin-left: 0%;
+    }
   }
 
   .desktop ul {
@@ -620,5 +631,15 @@ hr.foot {
     padding-left: 12px;
     display: flex;
     gap: 14px;
+  }
+
+  .work-img:hover {
+    transform: scale(1.2);
+    transition: transform 2s;
+  }
+
+  .social li:hover {
+    transform: scale(1.5);
+    transition: transform 1s;
   }
 }
