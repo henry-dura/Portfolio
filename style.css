@@ -393,6 +393,7 @@ hr.foot {
     from {
       margin-left: -100%;
     }
+
     to {
       margin-left: 0%;
     }
@@ -635,5 +636,10 @@ hr.foot {
   .work-img:hover {
     transform: scale(1.2);
     transition: transform 2s;
+  }
+
+  .social li:hover {
+    transform: scale(1.5);
+    transition: transform 1s;
   }
 }
