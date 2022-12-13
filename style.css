@@ -386,7 +386,7 @@ hr.foot {
     font-weight: 700;
     font-size: 20px;
     line-height: 20px;
-    animation: 2s 1 slidein;
+    animation: 4s 1 slidein;
   }
 
   @keyframes slidein {
