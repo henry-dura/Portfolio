@@ -11,4 +11,13 @@ function displayMenu(){
     navList.classList.remove('desktop');
     mobileMenu.appendChild(navList);  
 }
+
+function close(){
+    navBar.classList.remove('non-display');
+    mobileMenu.classList.add('non-display');
+}
+
+
+closeIcon.addEventListener('click', close);
+navList.addEventListener('click',close);
 hamburgerIcon.addEventListener('click', displayMenu);
