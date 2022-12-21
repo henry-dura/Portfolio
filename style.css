@@ -407,6 +407,13 @@ hr.mobile{
   color:#fff;
   text-decoration: none;
 }
+.close{
+  align-self: end;
+  padding: 24px;
+ } 
+ .non-display{
+   display: none;
+ }
 
 
 @media screen and (min-width: 768px) {
@@ -442,7 +449,7 @@ hr.mobile{
     }
   }
 
-  .desktop ul {
+  ul.desktop {
     display: flex;
     list-style: none;
     gap: 33px;
@@ -454,7 +461,7 @@ hr.mobile{
     line-height: 20px;
   }
 
-  .desktop ul a {
+  ul.desktop>li>a {
     text-decoration: none;
     color: #fff;
   }
