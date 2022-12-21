@@ -146,6 +146,18 @@ h3 {
   margin-bottom: 12px;
 }
 
+.mobile-menu ul {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #fff5e1;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 24px;
+}
+
 .Programming-skills ul {
   display: table;
   margin: 0 auto;
@@ -366,6 +378,43 @@ hr.foot {
   margin-bottom: 12px;
 }
 
+.mobile-menu {
+  background: #3c3a39;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  animation-name: slide;
+  animation-duration: 1s;
+}
+
+@keyframes slide {
+  0% { left: -100%; }
+  100% { left: 0%; }
+}
+
+hr.mobile {
+  margin: 0 auto;
+  border: 0.1px solid #706b6b;
+  width: 100%;
+}
+
+.mobile-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.close {
+  align-self: end;
+  padding: 24px;
+}
+
+.non-display {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .mobile {
     display: none;
@@ -399,7 +448,7 @@ hr.foot {
     }
   }
 
-  .desktop ul {
+  ul.desktop {
     display: flex;
     list-style: none;
     gap: 33px;
@@ -411,7 +460,7 @@ hr.foot {
     line-height: 20px;
   }
 
-  .desktop ul a {
+  ul.desktop > li > a {
     text-decoration: none;
     color: #fff;
   }
