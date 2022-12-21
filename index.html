@@ -12,31 +12,26 @@
 <body>
   <div class="container">
     <header>
-      <div class=" nav mobile">
-        <p class="logo">Henry Ik</p>
-        <nav>
-          <img src="images/Union.png" alt="hamburger-menu" />
-        </nav>
-      </div>
+      <div class="nav">
 
-      <div class=" nav desktop">
-        <p>Henry Ik</p>
-        <nav>
-          <ul>
-            <a href="#">
-              <li>Portfolio</li>
-            </a>
-            <a href="">
-              <li>About</li>
-            </a>
-            <a href="">
-              <li>Contact</li>
-            </a>
-            <a href=""><img src="images/envelope.png" alt="envelope-icon"></a>
-          </ul>
-        </nav>
-      </div>
-      
+          <p>Henry Ik</p>
+          <nav>
+            <img src="images/Union.png" alt="hamburger-menu" class="mobile" id="hamburger"/>
+
+           
+              
+              <ul class="desktop">
+                <li><a href="#portfolio">Portfolio</a><hr  class="mobile"></li>
+                <li><a href="#about">About</a><hr  class="mobile"></li>
+                <li><a href="#contact">Contact</a><hr  class="mobile"></li>
+                <li><a href="#"><img src="images/envelope.png" alt="envelope-icon" class="desktop"></a></li>
+              </ul>
+          </nav>
+        </div>
+        
+        <div class="mobile-menu non-display">
+          <img src="images/Icon - Cancel.png" alt="close-icon"  class="close"/>
+        </div>
     </header>
 
     
