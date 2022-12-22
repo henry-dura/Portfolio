@@ -61,7 +61,7 @@ After you're finished please remove all the comments and instructions!
 
 > Describe your project in 1 or 2 sentences.
 
-**Responsive Portfolio** is a responsive webpage design of a portfolio created to learn using figma,flexbox, and grid layout.
+**Responsive Portfolio** is a responsive webpage design of a portfolio created to learn using figma,flexbox,grid layout, and manipulating the DOM using javascript.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -96,9 +96,9 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **mobile first**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Responsive design**
+- **Desplays projects and links to the details**
+- **Used only vanilla CSS, html and Javascript**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -208,9 +208,29 @@ Example:
 - Twitter: https://twitter.com/henryikemefuna
 - LinkedIn: https://www.linkedin.com/in/henry-ikemefuna-ugwu-3a2613100/
 
-👤 **Author2**
+👤 **Samuel Popoola**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
+- GitHub: https://github.com/Tobby8629
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+
+👤 **Henry Odongo**
+
+- GitHub: https://github.com/Odongo006
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+
+👤 **Ram Kumar Karuppusamy**
+
+- GitHub: https://github.com/ram1117
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+👤 **Hana Sabih**
+
+- GitHub: https://github.com/HanaSabih
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
@@ -222,8 +242,8 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
+- [ ] **Client side form Validation with Javascript**
+- [ ] **Preserve data in browser with local storage**
 - [ ] **[new_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

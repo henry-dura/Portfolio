@@ -128,7 +128,9 @@ h3 {
   margin-bottom: 12px;
 }
 
-.works p {
+.works p,
+.modal-mobile p,
+.flex-right p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -219,9 +221,7 @@ button:enabled {
   color: #fff;
 }
 
-.see-project:hover,
-.lang button:hover,
-.lang.list button:hover {
+.see-project:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
@@ -391,8 +391,13 @@ hr.foot {
 }
 
 @keyframes slide {
-  0% { left: -100%; }
-  100% { left: 0%; }
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0%;
+  }
 }
 
 hr.mobile {
@@ -413,6 +418,88 @@ hr.mobile {
 
 .non-display {
   display: none;
+}
+
+.modal-mobile,
+.modal-desktop {
+  position: fixed;
+  top: 10%;
+  background-color: #fff;
+  z-index: 999;
+  padding: 24px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 80%;
+  left: 10%;
+  overflow: scroll;
+  bottom: 0;
+  right: 0;
+}
+
+.modal-headings {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.modal-mobile .image {
+  width: 100%;
+  height: auto;
+}
+
+.live-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal.see-project {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.live-btns a {
+  text-decoration: none;
+}
+
+.modal-mobile p {
+  color: #344563;
+  text-align: justify;
+}
+
+.mobile-Modal-Heading {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.modal.list button {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3a39;
+}
+
+.bluring {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  background: rgb(26, 24, 24);
+  cursor: pointer;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
 }
 
 @media screen and (min-width: 768px) {
@@ -590,6 +677,12 @@ hr.mobile {
     bottom: 0;
   }
 
+  .flex-right p {
+    line-height: 30px;
+    color: #344563;
+    text-align: justify;
+  }
+
   .grid:hover {
     background-image: url("images/Img Placeholder (1).png");
   }
@@ -690,5 +783,54 @@ hr.mobile {
   .social li:hover {
     transform: scale(1.5);
     transition: transform 1s;
+  }
+
+  .modal-desktop {
+    width: 80%;
+    top: 15%;
+    left: 10%;
+    padding: 27px 24px;
+    gap: 50px;
+  }
+
+  .modal-headings {
+    margin-bottom: -60px;
+  }
+
+  .Desktop-Modal-Heading {
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+
+  .In-flex {
+    display: flex;
+    gap: 12px;
+  }
+
+  .flex-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .In-flex .image {
+    width: 100%;
+    height: auto;
+    flex: 0 0 65%;
+  }
+
+  .modal.list button {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .live-btns {
+    justify-content: flex-start;
+    gap: 12px;
+    align-items: center;
   }
 }
