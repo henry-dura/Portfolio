@@ -134,5 +134,32 @@ for(let i = 2;i<arr.length;i++){
   <button class="see-project btn">See Project</button>
 `;
 count++
+}
+
+for(let i = 0; i< projects.length;i++){
+  const div = document.createElement('div');
+  div. classList.add('grid','desktop', projects[i].DesktopItem )
+  container.appendChild(div);
+}
+
+let count2 = 0;
+
+let arr2 = [...container.children];
+
+for(let i = 8;i<arr2.length;i++){
+  arr2[i].innerHTML = `
+  <h2>${projects[count2].nameDesk}</h2>
+  <p>${projects[count2].description}</p>
+  <div class="lang">
+  <ul>
+    <li><button>${projects[count2].technologies[0]}</button></li>
+    <li><button>${projects[count2].technologies[1]}</button></li>
+    <li><button>${projects[count2].technologies[2]}</button></li>
+  </ul>
+
+</div>
+<button class="see-project btn">See Project</button>
+`;
+count2++
 
 }
