@@ -423,15 +423,18 @@ hr.mobile {
 .modal-mobile,
 .modal-desktop {
   position: fixed;
-  top: 1%;
+  top: 10%;
   background-color: #fff;
   z-index: 999;
-  padding: 5px 12px 24px 12px;
+  padding: 24px 12px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  width: 82%;
-  left: 9%;
+  gap: 24px;
+  width: 80%;
+  left: 10%;
+  overflow: scroll;
+  bottom: 0;
+  right: 0;
 }
 
 .modal-headings {
@@ -443,7 +446,7 @@ hr.mobile {
 
 .modal-mobile .image {
   width: 100%;
-  height: 260px;
+  height: auto;
 }
 
 .live-btns {
@@ -485,7 +488,18 @@ hr.mobile {
 }
 
 .bluring {
-  opacity: 0.1;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  background: rgb(26, 24, 24);
+  cursor: pointer;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
 }
 
 @media screen and (min-width: 768px) {
@@ -772,9 +786,9 @@ hr.mobile {
   }
 
   .modal-desktop {
-    width: 70%;
-    top: 10%;
-    left: 15%;
+    width: 80%;
+    top: 15%;
+    left: 10%;
     padding: 27px 24px;
     gap: 50px;
   }

@@ -212,8 +212,8 @@ for (let i = 0; i < projects.length; i += 1) {
   <p>${projects[i].modalDescription}</p>
 
   <div class="live-btns">
-  <a href="https://henry-dura.github.io/portfolio-mobile-first/"><button class="modal see-project">See Live <img src="images/Icon.png" alt="Github-icon" /></button></a>
-  <a href="https://github.com/henry-dura/portfolio-mobile-first"><button class="modal see-project">See Source <img src="images/Icon -GitHub.png" alt="Github-icon" /></button></a>
+  <a href="https://henry-dura.github.io/portfolio-mobile-first/" target="_blank"><button class="modal see-project">See Live <img src="images/Icon.png" alt="Github-icon" /></button></a>
+  <a href="https://github.com/henry-dura/portfolio-mobile-first" target="_blank"><button class="modal see-project">See Source <img src="images/Icon -GitHub.png" alt="Github-icon" /></button></a>
   </div>
 
   `;
@@ -245,8 +245,8 @@ for (let i = 0; i < projects.length; i += 1) {
  <p>${projects[i].modalDescription}</p>
 
  <div class="live-btns">
- <a href="https://henry-dura.github.io/portfolio-mobile-first/"><button class=" modal see-project">See Live <img src="images/Icon.png" alt="Github-icon" /></button></a>
- <a href="https://github.com/henry-dura/portfolio-mobile-first"><button class=" modal see-project">See Source <img src="images/Icon -GitHub.png" alt="Github-icon" /></button></a>
+ <a href="https://henry-dura.github.io/portfolio-mobile-first/" target="_blank"><button class=" modal see-project">See Live <img src="images/Icon.png" alt="Github-icon" /></button></a>
+ <a href="https://github.com/henry-dura/portfolio-mobile-first" target="_blank"><button class=" modal see-project">See Source <img src="images/Icon -GitHub.png" alt="Github-icon" /></button></a>
  </div>
  </div>
 
