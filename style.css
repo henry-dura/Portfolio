@@ -415,6 +415,64 @@ hr.mobile {
   display: none;
 }
 
+.modal-mobile,
+.modal-desktop {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 999;
+  padding: 5px 12px 24px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width:100%;
+  
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+
+.modal-headings {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.modal-mobile .image {
+  width: 100%;
+  height: 300px;
+}
+.src {
+  height: 20px;
+}
+
+.live-btns {
+  display: flex;
+  justify-content: space-between;
+}
+.modal.see-project {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.live-btns a {
+  text-decoration: none;
+}
+
+.modal-mobile p {
+  color: #344563;
+}
+
+.mobile-Modal-Heading {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+
 @media screen and (min-width: 768px) {
   .mobile {
     display: none;
