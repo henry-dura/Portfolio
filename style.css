@@ -749,4 +749,55 @@ hr.mobile {
     transform: scale(1.5);
     transition: transform 1s;
   }
+
+  .modal-desktop{
+    width:70%;
+    top:15%;
+    left: 15%;
+    padding: 24px;
+  }
+
+  
+
+  .modal-headings {
+    margin-bottom: -25px;
+    
+  }
+
+  .Desktop-Modal-Heading {
+    font-family: "Crete Round", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+  }
+
+  .In-flex{
+    display:flex;
+    gap:12px;
+    
+  }
+
+  .In-flex .image{
+    width:100%;
+    height: 400px;
+    flex:0 0 65%;
+    
+  }
+  
+
+  .flex-right p{
+    line-height: 30px;
+    color: #344563;
+    margin-bottom: 64px;
+    text-align: justify;
+  
+  }
+  .live-btns {
+    justify-content:flex-start;
+    gap: 12px;
+    align-items: center;
+  }
+
 }
