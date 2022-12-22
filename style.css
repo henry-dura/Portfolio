@@ -423,14 +423,15 @@ hr.mobile {
 .modal-mobile,
 .modal-desktop {
   position: fixed;
-  top: 0;
+  top: 1%;
   background-color: #fff;
   z-index: 999;
   padding: 5px 12px 24px 12px;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 100%;
+  width: 82%;
+  left: 9%;
 
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
@@ -444,12 +445,12 @@ hr.mobile {
 
 .modal-mobile .image {
   width: 100%;
-  height: 300px;
+  height: 260px;
 }
 
-.src {
+/* .src {
   height: 20px;
-}
+} */
 
 .live-btns {
   display: flex;
@@ -468,6 +469,7 @@ hr.mobile {
 
 .modal-mobile p {
   color: #344563;
+  text-align: justify;
 }
 
 .mobile-Modal-Heading {
@@ -477,6 +479,19 @@ hr.mobile {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
+}
+
+.modal.list button {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #3c3a39;
+}
+
+.bluring {
+  opacity: 0.1;
 }
 
 @media screen and (min-width: 768px) {
@@ -657,7 +672,6 @@ hr.mobile {
   .flex-right p {
     line-height: 30px;
     color: #344563;
-    margin-bottom: 64px;
     text-align: justify;
   }
 
@@ -765,13 +779,14 @@ hr.mobile {
 
   .modal-desktop {
     width: 70%;
-    top: 15%;
+    top: 10%;
     left: 15%;
-    padding: 24px;
+    padding: 27px 24px;
+    gap: 50px;
   }
 
   .modal-headings {
-    margin-bottom: -25px;
+    margin-bottom: -60px;
   }
 
   .Desktop-Modal-Heading {
@@ -788,10 +803,21 @@ hr.mobile {
     gap: 12px;
   }
 
+  .flex-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .In-flex .image {
     width: 100%;
-    height: 400px;
+    height: auto;
     flex: 0 0 65%;
+  }
+
+  .modal.list button {
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .live-btns {

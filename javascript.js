@@ -163,10 +163,36 @@ for (let i = 8; i < arr2.length; i += 1) {
   count2 += 1;
 }
 
-// Modal design
+// PROJECT POPUP MENU
+// for mobile
 const seeProjectBtnMobile = document.querySelectorAll('.mobile .see-project');
 const modalMobile = document.createElement('div');
 modalMobile.classList.add('modal-mobile');
+const allElement = document.querySelector('#all-element'); // for both desktop and mobile
+
+// for desktop
+const seeProjectBtnDesktop = document.querySelectorAll('.desktop .see-project');
+const modalDesktop = document.createElement('div');
+modalDesktop.classList.add('modal-desktop');
+
+// function called when see project button is clicked in mobile;
+function mobile() {
+  document.body.appendChild(modalMobile);
+  allElement.classList.add('bluring');
+  document.querySelector('#modal-close').addEventListener('click', () => {
+    modalMobile.remove();
+    allElement.classList.remove('bluring');
+  });
+}
+// function called when see project button is clicked in desktop;
+function desk() {
+  document.body.appendChild(modalDesktop);
+  allElement.classList.add('bluring');
+  document.querySelector('#modal-close').addEventListener('click', () => {
+    modalDesktop.remove();
+    allElement.classList.remove('bluring');
+  });
+}
 
 // mobile modal design
 
@@ -194,24 +220,17 @@ for (let i = 0; i < projects.length; i += 1) {
 }
 
 seeProjectBtnMobile.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    document.body.appendChild(modalMobile);
-    document.querySelector('#modal-close').addEventListener('click', () => modalMobile.remove());
-  });
+  btn.addEventListener('click', mobile);
 });
 
 // Desktop modal design
-
-const seeProjectBtnDesktop = document.querySelectorAll('.desktop .see-project');
-const modalDesktop = document.createElement('div');
-modalDesktop.classList.add('modal-desktop');
 
 for (let i = 0; i < projects.length; i += 1) {
   modalDesktop.innerHTML = `<div class="modal-headings">
   <h2 class="Desktop-Modal-Heading">${projects[i].desktopModalHeading}</h2>
   <div><img src="images/Icon - Cancel.png" alt="close-icon" id="modal-close" /></div>
   </div>
-  <div class="lang list">
+  <div class="lang modal list ">
   <ul>
     <li><button>${projects[i].technologiesModal[0]}</button></li>
     <li><button>${projects[i].technologiesModal[1]}</button></li>
@@ -220,7 +239,7 @@ for (let i = 0; i < projects.length; i += 1) {
   </div>
 
   <div class="In-flex">
-  <img src="images/modal-mobile.png" alt="close-icon" class="image" />
+  <img src="images/Desktop-modal.png" alt="close-icon" class="image" />
 
  <div class="flex-right">
  <p>${projects[i].modalDescription}</p>
@@ -237,23 +256,11 @@ for (let i = 0; i < projects.length; i += 1) {
 }
 
 seeProjectBtnDesktop.forEach((btn) => {
-  btn.addEventListener('click', () => {
-    document.body.appendChild(modalDesktop);
-    document.querySelector('#modal-close').addEventListener('click', () => modalDesktop.remove());
-  });
+  btn.addEventListener('click', desk);
 });
 
 // first see-project button
 const buttn = document.querySelector('.see-project');
-
-function mobile() {
-  document.body.appendChild(modalMobile);
-  document.querySelector('#modal-close').addEventListener('click', () => modalMobile.remove());
-}
-function desk() {
-  document.body.appendChild(modalDesktop);
-  document.querySelector('#modal-close').addEventListener('click', () => modalDesktop.remove());
-}
 
 if (window.screen.width <= 768) {
   buttn.addEventListener('click', mobile);
