@@ -432,8 +432,6 @@ hr.mobile {
   gap: 8px;
   width: 82%;
   left: 9%;
-
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 
 .modal-headings {
@@ -447,10 +445,6 @@ hr.mobile {
   width: 100%;
   height: 260px;
 }
-
-/* .src {
-  height: 20px;
-} */
 
 .live-btns {
   display: flex;
