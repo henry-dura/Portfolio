@@ -106,3 +106,33 @@ const projects = [
   }
 ]
 
+const container = document.querySelector('.grid-container');
+
+// mobile cards
+for(let i = 0; i< projects.length;i++){
+    const div = document.createElement('div');
+    div.classList.add('grid','mobile');
+    container.appendChild(div);
+}
+
+let count = 0;
+
+let arr = [...container.children];
+
+for(let i = 2;i<arr.length;i++){
+    arr[i].innerHTML = `
+    <h2>${projects[count].nameMobile}</h2>
+    <p>${projects[count].description}</p>
+    <div class="lang">
+    <ul>
+      <li><button>${projects[count].technologies[0]}</button></li>
+      <li><button>${projects[count].technologies[1]}</button></li>
+      <li><button>${projects[count].technologies[2]}</button></li>
+    </ul>
+
+  </div>
+  <button class="see-project btn">See Project</button>
+`;
+count++
+
+}
