@@ -163,3 +163,7 @@ for(let i = 8;i<arr2.length;i++){
 count2++
 
 }
+
+const seeProjectBtnMobile = document.querySelectorAll('.mobile .see-project');
+const modalMobile = document.createElement('div');
+modalMobile.classList.add('modal-mobile');
