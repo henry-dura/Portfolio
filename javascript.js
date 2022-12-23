@@ -270,19 +270,15 @@ if (window.screen.width <= 768) {
 
 window.addEventListener('resize', () => this.location.reload());
 
-
 // contact form validation
 
 const form = document.querySelector('#register');
 const email = document.querySelector('#email');
 const errorMessage = document.querySelector('.error-message');
 
-form.addEventListener("submit", (event)=>{
-  if(email.value !== email.value.toLowerCase()){
+form.addEventListener('submit', (event) => {
+  if (email.value !== email.value.toLowerCase()) {
     errorMessage.style.visibility = 'visible';
-    event.preventDefault(); 
+    event.preventDefault();
   }
-})
-
-
-
+});
