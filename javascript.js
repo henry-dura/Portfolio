@@ -279,7 +279,7 @@ const fullName = document.querySelector('#Full-name');
 const feedback = document.querySelector('#message');
 
 const firstName = document.querySelector('#First-name');
-const lastName  = document.querySelector('#Last-name')
+const lastName = document.querySelector('#Last-name');
 
 form.addEventListener('submit', (event) => {
   if (email.value !== email.value.toLowerCase()) {
@@ -287,7 +287,6 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
-
 
 // storing data in local storage
 function visitorData() {
@@ -315,4 +314,3 @@ if (visitorDataExist) {
   email.value = visitorDataExist.Email;
   feedback.value = visitorDataExist.Message;
 }
-
