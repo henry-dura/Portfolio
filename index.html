@@ -19,11 +19,11 @@
           <div class="nav">
               <p>Henry Ik</p>
               <nav>
-                <img src="images/Union.png" alt="hamburger-menu" class="mobile" id="hamburger"/>
+                <img src="images/Union.png" alt="hamburger-menu" class="mobile menu" id="hamburger"/>
                   <ul class="desktop">
-                    <li><a href="#portfolio">Portfolio</a><hr  class="mobile"></li>
-                    <li><a href="#about">About</a><hr  class="mobile"></li>
-                    <li><a href="#contact">Contact</a><hr  class="mobile"></li>
+                    <li><a href="#portfolio">Portfolio</a><hr  class="mobile menu"></li>
+                    <li><a href="#about">About</a><hr  class="mobile menu"></li>
+                    <li><a href="#contact">Contact</a><hr  class="mobile menu"></li>
                     <li><a href="#"><img src="images/envelope.png" alt="envelope-icon" class="desktop"></a></li>
                   </ul>
               </nav>
@@ -124,22 +124,23 @@
       </div>
       <section class="contact" id="contact">
         <h3 class="bottom-text">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
-        <form action="https://formspree.io/f/mzbwnroj" method="post">
-          <input type="text" name="name" placeholder="Full name" maxlength="30" class="mobile" required>
+        <form action="https://formspree.io/f/mzbwnroj" method="post" id="register">
+          <input type="text" name="name" placeholder="Full name" maxlength="30" class="mobile">
           <hr class="mobile">
           <div class="desktop contact-names">
             <div class="first-name">
-              <input type="text" name="name" placeholder="First Name" maxlength="30"  required>
+              <input type="text" name="name" placeholder="First Name" maxlength="30" >
               <hr class="foot">
             </div>
             <div class="last-name">
-              <input type="text" name="name" placeholder="Last Name" maxlength="30"  required>
+              <input type="text" name="name" placeholder="Last Name" maxlength="30" >
               <hr class="foot">
             </div>
           </div>
-          <input type="email" name="email" placeholder="Email address" required>
+          <input type="email" name="email" placeholder="Email address" id="email" required>
           <hr>
           <textarea name="message" id="message"  rows="5" cols="30" maxlength="500" placeholder="Enter text here"></textarea>
+          <p class="error-message">Message  not sent!  Please,  use lower case letters for your email</p>
           <button type="submit" id="submit-btn" class="see-project">Get in touch</button>
         </form>
       </section>
