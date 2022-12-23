@@ -307,3 +307,12 @@ feedback.addEventListener('focusout', visitorData);
 firstName.addEventListener('focusout', visitorData);
 lastName.addEventListener('focusout', visitorData);
 
+const visitorDataExist = JSON.parse(localStorage.getItem('visitor'));
+if (visitorDataExist) {
+  firstName.value = visitorDataExist.First;
+  lastName.value = visitorDataExist.Last;
+  fullName.value = visitorDataExist.Name;
+  email.value = visitorDataExist.Email;
+  feedback.value = visitorDataExist.Message;
+}
+
