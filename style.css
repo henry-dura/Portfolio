@@ -130,7 +130,8 @@ h3 {
 
 .works p,
 .modal-mobile p,
-.flex-right p {
+.flex-right p,
+.error-message {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -400,7 +401,7 @@ hr.foot {
   }
 }
 
-hr.mobile {
+hr.mobile.menu {
   margin: 0 auto;
   border: 0.1px solid #706b6b;
   width: 100%;
@@ -500,6 +501,11 @@ hr.mobile {
   cursor: pointer;
   filter: blur(5px);
   -webkit-filter: blur(5px);
+}
+
+.error-message {
+  visibility: hidden;
+  margin-bottom: 5px;
 }
 
 @media screen and (min-width: 768px) {
