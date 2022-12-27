@@ -1,25 +1,17 @@
+// mobile menu popup
 const hamburgerIcon = document.querySelector('#hamburger');
 const navList = document.querySelector('.nav ul');
-const mobileMenu = document.querySelector('.mobile-menu');
 const navBar = document.querySelector('.nav');
-const closeIcon = document.querySelector('.close');
+const item = document.querySelectorAll('.nav-item');
 
 function displayMenu() {
-  navBar.classList.add('non-display');
-  mobileMenu.classList.remove('non-display');
-  navList.classList.remove('desktop');
-  mobileMenu.appendChild(navList);
+  navList.classList.toggle('desktop');
+  navBar.classList.toggle('mobile-menu');
+  item.forEach(n => n.classList.toggle('non-display')) 
+  navList.addEventListener('click',displayMenu);
 }
 
-function close() {
-  navBar.classList.remove('non-display');
-  mobileMenu.classList.add('non-display');
-}
-
-closeIcon.addEventListener('click', close);
-navList.addEventListener('click', close);
-hamburgerIcon.addEventListener('click', displayMenu);
-
+// Project cards display
 const projects = [
   {
     nameMobile: 'Project Art Printing Data',

@@ -161,6 +161,7 @@ h3 {
   padding: 0 24px;
 }
 
+
 .Programming-skills ul {
   display: table;
   margin: 0 auto;
@@ -382,9 +383,10 @@ hr.foot {
 .mobile-menu {
   background: #3c3a39;
   position: fixed;
+  top: 0;
   width: 100%;
   height: 100vh;
-  z-index: 20;
+  z-index: 50;
   display: flex;
   flex-direction: column;
   animation-name: slide;
@@ -410,11 +412,15 @@ hr.mobile.menu {
 .mobile-menu a {
   color: #fff;
   text-decoration: none;
+  padding-left: 12px;
 }
-
-.close {
-  align-self: end;
-  padding: 24px;
+.mobile-menu ul>li:first-child{
+  /* width: 35px; */
+  align-self: flex-end;
+}
+#close {
+  width:100%;
+  height: auto;
 }
 
 .non-display {
