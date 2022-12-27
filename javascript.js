@@ -275,6 +275,11 @@ window.addEventListener('resize', () => this.location.reload());
 const form = document.querySelector('#register');
 const email = document.querySelector('#email');
 const errorMessage = document.querySelector('.error-message');
+const fullName = document.querySelector('#Full-name');
+const feedback = document.querySelector('#message');
+
+const firstName = document.querySelector('#First-name');
+const lastName = document.querySelector('#Last-name');
 
 form.addEventListener('submit', (event) => {
   if (email.value !== email.value.toLowerCase()) {
@@ -282,3 +287,30 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+// storing data in local storage
+function visitorData() {
+  const visitor = {
+    First: firstName.value,
+    Last: lastName.value,
+    Name: fullName.value,
+    Email: email.value,
+    Message: feedback.value,
+  };
+  localStorage.setItem('visitor', JSON.stringify(visitor));
+}
+
+fullName.addEventListener('focusout', visitorData);
+email.addEventListener('focusout', visitorData);
+feedback.addEventListener('focusout', visitorData);
+firstName.addEventListener('focusout', visitorData);
+lastName.addEventListener('focusout', visitorData);
+
+const visitorDataExist = JSON.parse(localStorage.getItem('visitor'));
+if (visitorDataExist) {
+  firstName.value = visitorDataExist.First;
+  lastName.value = visitorDataExist.Last;
+  fullName.value = visitorDataExist.Name;
+  email.value = visitorDataExist.Email;
+  feedback.value = visitorDataExist.Message;
+}
