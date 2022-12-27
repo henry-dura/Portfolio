@@ -233,7 +233,7 @@ seeProjectBtnDesktop.forEach((btn) => {
   btn.addEventListener('click', desk);
 });
 
-// first see-project button
+// consider different screen sizes
 const buttn = document.querySelector('.see-project');
 
 if (window.screen.width <= 768) {
@@ -254,7 +254,6 @@ const email = document.querySelector('#email');
 const errorMessage = document.querySelector('.error-message');
 const fullName = document.querySelector('#Full-name');
 const feedback = document.querySelector('#message');
-
 const firstName = document.querySelector('#First-name');
 const lastName = document.querySelector('#Last-name');
 
@@ -277,11 +276,7 @@ function visitorData() {
   localStorage.setItem('visitor', JSON.stringify(visitor));
 }
 
-fullName.addEventListener('focusout', visitorData);
-email.addEventListener('focusout', visitorData);
-feedback.addEventListener('focusout', visitorData);
-firstName.addEventListener('focusout', visitorData);
-lastName.addEventListener('focusout', visitorData);
+[fullName,email,feedback,firstName,lastName].forEach(input => input.addEventListener('focusout', visitorData))
 
 const visitorDataExist = JSON.parse(localStorage.getItem('visitor'));
 if (visitorDataExist) {
