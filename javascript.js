@@ -270,6 +270,23 @@ if (window.screen.width <= 768) {
 
 window.addEventListener('resize', () => this.location.reload());
 
+
+optionDesk = document.querySelector('optionD');
+optionMobile = document.querySelector('optionM');
+
+function widthCheck(){
+  if(window.innerWidth <= 768){
+    optionDesk.required = false;
+  }else{
+    optionMobile.required = false; 
+  }
+}
+
+if(window.addEventListener){
+  widthCheck();
+  window.addEventListener('resize', widthCheck)
+}
+
 // contact form validation
 
 const form = document.querySelector('#register');
