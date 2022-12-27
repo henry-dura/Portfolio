@@ -100,11 +100,29 @@ const projects = [
 
 const container = document.querySelector('.grid-container');
 
+function widthCheck(){
+  if(window.innerWidth <= 768){
+    optionDesk.required = false;
+  }else{
+    optionMobile.required = false; 
+  }
+}
+
 // mobile cards
+let h2;
 for (let i = 0; i < projects.length; i += 1) {
   const div = document.createElement('div');
-  div.classList.add('grid', 'mobile');
   container.appendChild(div);
+  h2 = document.createComment('h2');
+  // div.classList.add('grid', 'mobile');
+  if(window.innerWidth <= 768){
+    div.classList.add('grid', 'mobile');
+    h2.textContent = `${projects[i].nameMobile}`;
+  }else{
+    div.classList.add('grid', 'desktop', projects[i].DesktopItem);
+    h2.textContent = `${projects[i].nameDesk}`;
+  }
+  
 }
 
 let count = 0;
@@ -112,8 +130,10 @@ let count = 0;
 const arr = [...container.children];
 
 for (let i = 2; i < arr.length; i += 1) {
+  // console.log(h2);
+  // arr[i].appendChild(h2);
   arr[i].innerHTML = `
-    <h2>${projects[count].nameMobile}</h2>
+  <span>${h2}</span>
     <p>${projects[count].description}</p>
     <div class="lang">
     <ul>
@@ -124,36 +144,38 @@ for (let i = 2; i < arr.length; i += 1) {
 
   </div>
   <button class="see-project btn">See Project</button>
-`;
+`; 
   count += 1;
 }
 
-for (let i = 0; i < projects.length; i += 1) {
-  const div = document.createElement('div');
-  div.classList.add('grid', 'desktop', projects[i].DesktopItem);
-  container.appendChild(div);
-}
+{/* <h2>${projects[count].nameMobile}</h2> */}
 
-let count2 = 0;
+// for (let i = 0; i < projects.length; i += 1) {
+//   const div = document.createElement('div');
+//   div.classList.add('grid', 'desktop', projects[i].DesktopItem);
+//   container.appendChild(div);
+// }
 
-const arr2 = [...container.children];
+// let count2 = 0;
 
-for (let i = 8; i < arr2.length; i += 1) {
-  arr2[i].innerHTML = `
-  <h2>${projects[count2].nameDesk}</h2>
-  <p>${projects[count2].description}</p>
-  <div class="lang">
-  <ul>
-    <li><button>${projects[count2].technologies[0]}</button></li>
-    <li><button>${projects[count2].technologies[1]}</button></li>
-    <li><button>${projects[count2].technologies[2]}</button></li>
-  </ul>
+// const arr2 = [...container.children];
 
-</div>
-<button class="see-project btn">See Project</button>
-`;
-  count2 += 1;
-}
+// for (let i = 8; i < arr2.length; i += 1) {
+//   arr2[i].innerHTML = `
+//   <h2>${projects[count2].nameDesk}</h2>
+//   <p>${projects[count2].description}</p>
+//   <div class="lang">
+//   <ul>
+//     <li><button>${projects[count2].technologies[0]}</button></li>
+//     <li><button>${projects[count2].technologies[1]}</button></li>
+//     <li><button>${projects[count2].technologies[2]}</button></li>
+//   </ul>
+
+// </div>
+// <button class="see-project btn">See Project</button>
+// `;
+//   count2 += 1;
+// }
 
 // PROJECT POPUP MENU
 // for mobile
@@ -263,14 +285,17 @@ if (window.screen.width <= 768) {
 window.addEventListener('resize', () => this.location.reload());
 
 
-optionDesk = document.querySelector('optionD');
-optionMobile = document.querySelector('optionM');
+// optionDesk = document.querySelector('optionD');
+// optionMobile = document.querySelector('optionM');
+
+
+
 
 function widthCheck(){
   if(window.innerWidth <= 768){
-    optionDesk.required = false;
+    document.querySelector('.optionM').required = false;
   }else{
-    optionMobile.required = false; 
+    document.querySelector('.optionD').required = false;
   }
 }
 
