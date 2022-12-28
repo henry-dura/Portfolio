@@ -129,8 +129,9 @@ h3 {
 }
 
 .works p,
-.modal-mobile p,
-.flex-right p {
+.modal-display p,
+.flex-right p,
+.error-message {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -381,9 +382,10 @@ hr.foot {
 .mobile-menu {
   background: #3c3a39;
   position: fixed;
+  top: 0;
   width: 100%;
   height: 100vh;
-  z-index: 20;
+  z-index: 50;
   display: flex;
   flex-direction: column;
   animation-name: slide;
@@ -400,7 +402,7 @@ hr.foot {
   }
 }
 
-hr.mobile {
+hr.mobile.menu {
   margin: 0 auto;
   border: 0.1px solid #706b6b;
   width: 100%;
@@ -409,19 +411,24 @@ hr.mobile {
 .mobile-menu a {
   color: #fff;
   text-decoration: none;
+  padding-left: 12px;
 }
 
-.close {
-  align-self: end;
-  padding: 24px;
+.mobile-menu ul > li:first-child {
+  /* width: 35px; */
+  align-self: flex-end;
+}
+
+#close {
+  width: 100%;
+  height: auto;
 }
 
 .non-display {
   display: none;
 }
 
-.modal-mobile,
-.modal-desktop {
+.modal-display {
   position: fixed;
   top: 10%;
   background-color: #fff;
@@ -444,7 +451,7 @@ hr.mobile {
   align-items: center;
 }
 
-.modal-mobile .image {
+.modal-display .image {
   width: 100%;
   height: auto;
 }
@@ -469,7 +476,7 @@ hr.mobile {
   text-align: justify;
 }
 
-.mobile-Modal-Heading {
+.modal-Heading {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -500,6 +507,11 @@ hr.mobile {
   cursor: pointer;
   filter: blur(5px);
   -webkit-filter: blur(5px);
+}
+
+.error-message {
+  visibility: hidden;
+  margin-bottom: 5px;
 }
 
 @media screen and (min-width: 768px) {
@@ -785,7 +797,7 @@ hr.mobile {
     transition: transform 1s;
   }
 
-  .modal-desktop {
+  .modal-display {
     width: 80%;
     top: 15%;
     left: 10%;
@@ -797,7 +809,7 @@ hr.mobile {
     margin-bottom: -60px;
   }
 
-  .Desktop-Modal-Heading {
+  .modal-Heading {
     font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: 400;
