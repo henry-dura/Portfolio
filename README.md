@@ -108,7 +108,7 @@ After you're finished please remove all the comments and instructions!
 
 
 
-- [Live Demo Link](https://henry-dura.github.io/portfolio-mobile-first/)
+- [Live Demo Link](https://henry-dura.github.io/Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
