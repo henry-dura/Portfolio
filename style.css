@@ -129,7 +129,7 @@ h3 {
 }
 
 .works p,
-.modal-mobile p,
+.modal-display p,
 .flex-right p,
 .error-message {
   font-family: "Inter", sans-serif;
@@ -160,7 +160,6 @@ h3 {
   gap: 20px;
   padding: 0 24px;
 }
-
 
 .Programming-skills ul {
   display: table;
@@ -414,12 +413,14 @@ hr.mobile.menu {
   text-decoration: none;
   padding-left: 12px;
 }
-.mobile-menu ul>li:first-child{
+
+.mobile-menu ul > li:first-child {
   /* width: 35px; */
   align-self: flex-end;
 }
+
 #close {
-  width:100%;
+  width: 100%;
   height: auto;
 }
 
@@ -427,8 +428,7 @@ hr.mobile.menu {
   display: none;
 }
 
-.modal-mobile,
-.modal-desktop {
+.modal-display {
   position: fixed;
   top: 10%;
   background-color: #fff;
@@ -451,7 +451,7 @@ hr.mobile.menu {
   align-items: center;
 }
 
-.modal-mobile .image {
+.modal-display .image {
   width: 100%;
   height: auto;
 }
@@ -476,7 +476,7 @@ hr.mobile.menu {
   text-align: justify;
 }
 
-.mobile-Modal-Heading {
+.modal-Heading {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -797,7 +797,7 @@ hr.mobile.menu {
     transition: transform 1s;
   }
 
-  .modal-desktop {
+  .modal-display {
     width: 80%;
     top: 15%;
     left: 10%;
@@ -809,7 +809,7 @@ hr.mobile.menu {
     margin-bottom: -60px;
   }
 
-  .Desktop-Modal-Heading {
+  .modal-Heading {
     font-family: "Crete Round", serif;
     font-style: normal;
     font-weight: 400;

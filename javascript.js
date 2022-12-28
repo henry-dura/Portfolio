@@ -7,9 +7,11 @@ const item = document.querySelectorAll('.nav-item');
 function displayMenu() {
   navList.classList.toggle('desktop');
   navBar.classList.toggle('mobile-menu');
-  item.forEach(n => n.classList.toggle('non-display')) 
-  navList.addEventListener('click',displayMenu);
+  item.forEach((itemElement) => itemElement.classList.toggle('non-display'));
+  navList.addEventListener('click', displayMenu);
 }
+
+hamburgerIcon.addEventListener('click', displayMenu);
 
 // Project card objects
 const projects = [
@@ -24,7 +26,6 @@ const projects = [
     modalDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     live: 'https://henry-dura.github.io/portfolio-mobile-first/',
     source: 'https://github.com/henry-dura/portfolio-mobile-first',
-
   },
   {
     nameMobile: 'Project Art Printing Data',
@@ -38,7 +39,6 @@ const projects = [
     modalDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     live: 'https://henry-dura.github.io/portfolio-mobile-first/',
     source: 'https://github.com/henry-dura/portfolio-mobile-first',
-
   },
   {
     nameMobile: 'Project Art Printing Data',
@@ -52,7 +52,6 @@ const projects = [
     modalDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     live: 'https://henry-dura.github.io/portfolio-mobile-first/',
     source: 'https://github.com/henry-dura/portfolio-mobile-first',
-
   },
   {
     nameMobile: 'Project Art Printing Data',
@@ -66,7 +65,6 @@ const projects = [
     modalDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     live: 'https://henry-dura.github.io/portfolio-mobile-first/',
     source: 'https://github.com/henry-dura/portfolio-mobile-first',
-
   },
   {
     nameMobile: 'Project Art Printing Data',
@@ -80,7 +78,6 @@ const projects = [
     modalDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     live: 'https://henry-dura.github.io/portfolio-mobile-first/',
     source: 'https://github.com/henry-dura/portfolio-mobile-first',
-
   },
   {
     nameMobile: 'Project Art Printing Data',
@@ -94,7 +91,6 @@ const projects = [
     modalDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     live: 'https://henry-dura.github.io/portfolio-mobile-first/',
     source: 'https://github.com/henry-dura/portfolio-mobile-first',
-
   },
 ];
 
@@ -104,11 +100,11 @@ const container = document.querySelector('.grid-container');
 for (let i = 0; i < projects.length; i += 1) {
   const div = document.createElement('div');
   container.appendChild(div);
- const h2 = document.createElement('h2'); 
-  if(window.innerWidth <= 768){
+  const h2 = document.createElement('h2');
+  if (window.innerWidth <= 768) {
     div.classList.add('grid', 'mobile');
     h2.textContent = projects[i].nameMobile;
-  }else{
+  } else {
     div.classList.add('grid', 'desktop', projects[i].DesktopItem);
     h2.textContent = projects[i].nameDesk;
   }
@@ -120,7 +116,7 @@ let count = 0;
 const arr = [...container.children];
 
 for (let i = 2; i < arr.length; i += 1) {
-  let span = document.createElement('span');
+  const span = document.createElement('span');
   span.innerHTML = `
     <p>${projects[count].description}</p>
     <div class="lang">
@@ -136,118 +132,65 @@ for (let i = 2; i < arr.length; i += 1) {
   count += 1;
 }
 
-
 // PROJECT POPUP MENU
-// for mobile
-const seeProjectBtnMobile = document.querySelectorAll('.mobile .see-project');
-const modalMobile = document.createElement('div');
-modalMobile.classList.add('modal-mobile');
+const seeProjectBtn = document.querySelectorAll('.works .see-project');
+const modalDisplay = document.createElement('div');
+modalDisplay.classList.add('modal-display');
 const allElement = document.querySelector('#all-element'); // for both desktop and mobile
 
-// for desktop
-const seeProjectBtnDesktop = document.querySelectorAll('.desktop .see-project');
-const modalDesktop = document.createElement('div');
-modalDesktop.classList.add('modal-desktop');
-
-// function called when see project button is clicked in mobile;
-function mobile() {
-  document.body.appendChild(modalMobile);
+// function called when see project button is clicked;
+function modal() {
+  document.body.appendChild(modalDisplay);
   allElement.classList.add('bluring');
   document.querySelector('#modal-close').addEventListener('click', () => {
-    modalMobile.remove();
-    allElement.classList.remove('bluring');
-  });
-}
-// function called when see project button is clicked in desktop;
-function desk() {
-  document.body.appendChild(modalDesktop);
-  allElement.classList.add('bluring');
-  document.querySelector('#modal-close').addEventListener('click', () => {
-    modalDesktop.remove();
+    modalDisplay.remove();
     allElement.classList.remove('bluring');
   });
 }
 
-// mobile modal design
-
+// modal display design
 for (let i = 0; i < projects.length; i += 1) {
-  modalMobile.innerHTML = `<div class="modal-headings">
-  <h2 class="mobile-Modal-Heading">${projects[i].mobileModalHeading}</h2>
+  modalDisplay.innerHTML = `<div class="modal-headings">
+  <h2 class=" mobile modal-Heading">${projects[i].mobileModalHeading}</h2>
+  <h2 class=" desktop modal-Heading">${projects[i].desktopModalHeading}</h2>
   <div><img src="images/Icon - Cancel.png" alt="close-icon" id="modal-close" /></div>
   </div>
-  <div class="lang list">
+  <div class="lang modal list">
   <ul>
     <li><button>${projects[i].technologiesModal[0]}</button></li>
     <li><button>${projects[i].technologiesModal[1]}</button></li>
     <li><button>${projects[i].technologiesModal[2]}</button></li>
   </ul>
   </div>
-  <img src="images/modal-mobile.png" alt="close-icon" class="image" />
-  <p>${projects[i].modalDescription}</p>
 
+  <div class='In-flex'>
+  <img src="images/modal-mobile.png" alt="close-icon" class=" mobile image" />
+  <img src="images/Desktop-modal.png" alt="close-icon" class=" desktop image" />
+
+  <div class="flex-right">
+  <p>${projects[i].modalDescription}</p>
   <div class="live-btns">
   <a href="https://henry-dura.github.io/portfolio-mobile-first/" target="_blank"><button class="modal see-project">See Live <img src="images/Icon.png" alt="Github-icon" /></button></a>
   <a href="https://github.com/henry-dura/portfolio-mobile-first" target="_blank"><button class="modal see-project">See Source <img src="images/Icon -GitHub.png" alt="Github-icon" /></button></a>
   </div>
+  </div>
 
+  </div>
   `;
 }
 
-seeProjectBtnMobile.forEach((btn) => {
-  btn.addEventListener('click', mobile);
+seeProjectBtn.forEach((btn) => {
+  btn.addEventListener('click', modal);
 });
 
-// Desktop modal design
-
-for (let i = 0; i < projects.length; i += 1) {
-  modalDesktop.innerHTML = `<div class="modal-headings">
-  <h2 class="Desktop-Modal-Heading">${projects[i].desktopModalHeading}</h2>
-  <div><img src="images/Icon - Cancel.png" alt="close-icon" id="modal-close" /></div>
-  </div>
-  <div class="lang modal list ">
-  <ul>
-    <li><button>${projects[i].technologiesModal[0]}</button></li>
-    <li><button>${projects[i].technologiesModal[1]}</button></li>
-    <li><button>${projects[i].technologiesModal[2]}</button></li>
-  </ul>
-  </div>
-
-  <div class="In-flex">
-  <img src="images/Desktop-modal.png" alt="close-icon" class="image" />
-
- <div class="flex-right">
- <p>${projects[i].modalDescription}</p>
-
- <div class="live-btns">
- <a href="https://henry-dura.github.io/portfolio-mobile-first/" target="_blank"><button class=" modal see-project">See Live <img src="images/Icon.png" alt="Github-icon" /></button></a>
- <a href="https://github.com/henry-dura/portfolio-mobile-first" target="_blank"><button class=" modal see-project">See Source <img src="images/Icon -GitHub.png" alt="Github-icon" /></button></a>
- </div>
- </div>
-
-  </div>
-
-  `;
-}
-
-seeProjectBtnDesktop.forEach((btn) => {
-  btn.addEventListener('click', desk);
-});
-
-// consider different screen sizes
-const buttn = document.querySelector('.see-project');
-
+// contact form validation
 if (window.screen.width <= 768) {
-  buttn.addEventListener('click', mobile);
   document.querySelector('.optionM').required = false;
 } else {
-  buttn.addEventListener('click', desk);
   document.querySelector('.optionD').required = false;
 }
 
 window.addEventListener('resize', () => this.location.reload());
-
-
-// contact form validation
 
 const form = document.querySelector('#register');
 const email = document.querySelector('#email');
@@ -276,8 +219,8 @@ function visitorData() {
   localStorage.setItem('visitor', JSON.stringify(visitor));
 }
 
-[fullName,email,feedback,firstName,lastName].forEach(input => input.addEventListener('focusout', visitorData))
-
+[fullName, email, feedback, firstName, lastName].forEach((input) => input.addEventListener('focusout', visitorData));
+// retrieve data from local storage
 const visitorDataExist = JSON.parse(localStorage.getItem('visitor'));
 if (visitorDataExist) {
   firstName.value = visitorDataExist.First;
